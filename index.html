@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="description" content="Política de Privacidade do XcreenFlix: saiba quais dados são tratados, por quê, como são protegidos e como exercer os seus direitos.">
+<meta name="robots" content="index,follow">
+<title>Política de Privacidade — XcreenFlix</title>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0b0b0d;
+  --panel:#141418;
+  --panel-2:#1a1a20;
+  --line:#2b2b33;
+  --text:#f5f5f7;
+  --muted:#a7a7b3;
+  --gold:#f4b43e;
+  --gold-soft:#f4b43e1f;
+  --green:#3ddc97;
+  --radius:18px;
+  --max:980px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 520px at 88% -8%,#f4b43e12,transparent 62%),
+    radial-gradient(760px 520px at -10% 104%,#f4b43e0d,transparent 62%),
+    var(--bg);
+  color:var(--text);
+  font:15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Cantarell,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.topbar{
+  position:sticky;top:0;z-index:20;
+  border-bottom:1px solid var(--line);
+  background:#0b0b0dd9;
+  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(14px);
+}
+.topbar-inner{
+  width:min(var(--max),calc(100% - 32px));
+  min-height:68px;margin:auto;
+  display:flex;align-items:center;gap:14px;justify-content:space-between;
+}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--text);font-weight:900;letter-spacing:-.03em}
+.brand:hover{text-decoration:none}
+.brand-mark{
+  display:grid;place-items:center;width:30px;height:30px;border-radius:9px;
+  background:linear-gradient(145deg,var(--gold),#d18a12);color:#17120a;
+  font:900 16px/1 system-ui,sans-serif;box-shadow:0 8px 20px #f4b43e33;
+}
+.brand b{color:var(--gold)}
+.back{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 13px;border:1px solid var(--line);border-radius:999px;
+  color:var(--muted);font-size:13px;font-weight:700;background:var(--panel);
+}
+.back:hover{color:var(--text);text-decoration:none;border-color:#464652}
+.wrap{width:min(var(--max),calc(100% - 32px));margin:auto;padding:46px 0 70px}
+.hero{padding:8px 0 28px}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 11px;border-radius:999px;
+  border:1px solid #f4b43e3d;background:var(--gold-soft);
+  color:#ffd27a;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #3ddc971a}
+h1{margin:18px 0 12px;font-size:clamp(34px,7vw,58px);line-height:1.02;letter-spacing:-.055em}
+h1 span{color:var(--gold)}
+.lead{max-width:760px;margin:0;color:var(--muted);font-size:clamp(15px,2.2vw,18px)}
+.updated{
+  display:inline-flex;flex-wrap:wrap;gap:6px 14px;margin-top:20px;
+  color:var(--muted);font-size:12.5px;
+}
+.updated strong{color:var(--text)}
+.notice{
+  margin:28px 0 0;padding:16px 18px;
+  border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:0 14px 14px 0;background:var(--panel);color:#d7d7df;
+}
+.notice strong{color:var(--text)}
+.toc{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;
+  margin:34px 0 10px;padding:18px;
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+}
+.toc a{
+  display:flex;align-items:center;gap:9px;
+  padding:9px 10px;border-radius:10px;color:var(--muted);
+  font-size:13px;font-weight:700;
+}
+.toc a:hover{background:var(--panel-2);color:var(--text);text-decoration:none}
+.toc span{color:var(--gold);font-size:11px;font-weight:900;min-width:18px}
+section{
+  margin-top:42px;padding-top:4px;
+}
+section h2{
+  display:flex;align-items:center;gap:10px;
+  margin:0 0 14px;font-size:clamp(21px,3vw,28px);line-height:1.2;letter-spacing:-.03em;
+}
+section h2:before{content:"";width:4px;height:24px;border-radius:99px;background:var(--gold);flex:none}
+section h3{margin:24px 0 8px;font-size:16px;letter-spacing:-.01em}
+p{margin:0 0 13px;color:#d2d2da}
+ul,ol{margin:0 0 14px;padding-left:22px;color:#d2d2da}
+li{margin:6px 0}
+li::marker{color:var(--gold)}
+.card{
+  padding:20px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--panel);
+}
+.card + .card{margin-top:12px}
+.card h3{margin-top:0}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.mini{
+  padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel);
+}
+.mini strong{display:block;margin-bottom:4px;color:var(--text)}
+.mini span{display:block;color:var(--muted);font-size:13px}
+.table-wrap{
+  overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+}
+table{width:100%;border-collapse:collapse;min-width:720px}
+th,td{padding:13px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--panel-2);color:var(--text);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+td{color:#d2d2da;font-size:13.5px}
+tr:last-child td{border-bottom:0}
+code{
+  padding:2px 6px;border:1px solid #3a3a44;border-radius:6px;
+  background:#0e0e12;color:#ffe3a1;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  word-break:break-word;
+}
+.callout{
+  margin:18px 0;padding:16px 18px;border-radius:14px;
+  border:1px solid #3ddc9738;background:#3ddc970f;
+}
+.callout strong{color:#a8f4d3}
+.callout p:last-child{margin-bottom:0}
+.contact{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;
+}
+.contact a{
+  display:block;padding:18px;border:1px solid var(--line);border-radius:14px;
+  background:var(--panel);color:var(--text);font-weight:800;
+}
+.contact a:hover{border-color:var(--gold);text-decoration:none}
+.contact small{display:block;margin-top:4px;color:var(--muted);font-weight:500;font-size:12px;word-break:break-word}
+.footer{
+  width:min(var(--max),calc(100% - 32px));margin:auto;
+  padding:26px 0 46px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:12.5px;
+  display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:space-between;align-items:center;
+}
+.footer a{font-weight:700}
+@media (max-width:640px){
+  .wrap{padding-top:30px}
+  .toc{grid-template-columns:1fr}
+  th,td{padding:11px 12px}
+  table{min-width:640px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+@media print{
+  :root{color-scheme:light}
+  body{background:#fff;color:#111}
+  .topbar,.toc,.back{display:none}
+  .wrap{width:100%;padding:0}
+  p,li,td{color:#222}
+  .card,.mini,.table-wrap,.notice,.callout{border-color:#ccc;background:#fff}
+  a{color:#111;text-decoration:underline}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="https://xcreenflix.vercel.app" aria-label="XcreenFlix">
+      <span class="brand-mark">X</span>
+      <span>XCREEN<b>FLIX</b></span>
+    </a>
+    <a class="back" href="https://xcreenflix.vercel.app">Voltar ao app <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <span class="kicker"><i></i> Documento legal</span>
+    <h1>Política de <span>Privacidade</span></h1>
+    <p class="lead">Esta política explica quais dados o XcreenFlix trata, para que finalidades, com quem podem ser partilhados e como você pode exercer os seus direitos.</p>
+    <p class="updated"><span><strong>Última atualização:</strong> 26 de novembro de 2026</span><span><strong>Vigência:</strong> imediata</span><span><strong>Idioma:</strong> Português (Brasil)</span></p>
+    <div class="notice"><strong>Resumo:</strong> você pode navegar sem criar conta. O login Google é opcional e serve para sincronizar favoritos e perfil. Preferências e progresso podem ficar apenas no seu aparelho. Não vendemos dados pessoais.</div>
+  </div>
+
+  <nav class="toc" aria-label="Índice da política">
+    <a href="#quem-somos"><span>01</span> Quem somos</a>
+    <a href="#dados"><span>02</span> Dados tratados</a>
+    <a href="#finalidades"><span>03</span> Finalidades e bases legais</a>
+    <a href="#cookies"><span>04</span> Cookies e armazenamento local</a>
+    <a href="#partilha"><span>05</span> Partilha com terceiros</a>
+    <a href="#retencao"><span>06</span> Retenção</a>
+    <a href="#seguranca"><span>07</span> Segurança</a>
+    <a href="#direitos"><span>08</span> Os seus direitos</a>
+    <a href="#menores"><span>09</span> Crianças e adolescentes</a>
+    <a href="#internacional"><span>10</span> Transferências internacionais</a>
+    <a href="#alteracoes"><span>11</span> Alterações</a>
+    <a href="#contacto"><span>12</span> Contacto</a>
+  </nav>
+
+  <section id="quem-somos">
+    <h2>1. Quem somos</h2>
+    <p>O <strong>XcreenFlix</strong> é um projeto independente de catálogo e descoberta de filmes, séries, animes, doramas e novelas. O serviço está disponível no site <a href="https://xcreenflix.vercel.app">xcreenflix.vercel.app</a>, como aplicação web progressiva (PWA), aplicativo Android e player incorporado.</p>
+    <p>Para efeitos desta política, o XcreenFlix é o responsável pelo tratamento dos dados pessoais descritos abaixo. O XcreenFlix não hospeda necessariamente os vídeos: o catálogo reúne metadados e o player pode abrir conteúdos ou embeds operados por terceiros. Esses terceiros têm as suas próprias políticas de privacidade.</p>
+  </section>
+
+  <section id="dados">
+    <h2>2. Dados que tratamos</h2>
+    <p>Tratamos apenas o necessário para o funcionamento do serviço. Dependendo de como você usa o XcreenFlix, podem ser tratados:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Categoria</th><th>Exemplos</th><th>Quando acontece</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dados de conta Google</strong></td>
+            <td>Nome, endereço de e-mail, foto de perfil e identificador da conta (UID). Não recebemos a sua senha do Google.</td>
+            <td>Quando você escolhe entrar com Google.</td>
+          </tr>
+          <tr>
+            <td><strong>Dados da conta no XcreenFlix</strong></td>
+            <td>Perfil, favoritos e preferências associados ao seu UID.</td>
+            <td>Quando você usa recursos que exigem login.</td>
+          </tr>
+          <tr>
+            <td><strong>Preferências no aparelho</strong></td>
+            <td>Tema, fonte, fundo, qualidade de imagem, seções ocultas, volume, último ponto de reprodução e pesquisas recentes.</td>
+            <td>Quando você ajusta o site ou assiste a algo.</td>
+          </tr>
+          <tr>
+            <td><strong>Notificações</strong></td>
+            <td>Endpoint de push, chaves públicas de subscrição e estado de leitura das notificações.</td>
+            <td>Quando você ativa notificações.</td>
+          </tr>
+          <tr>
+            <td><strong>Dados técnicos e de segurança</strong></td>
+            <td>Endereço IP, tipo de navegador/aparelho, data e hora, página acessada, erros, cookie de sessão e identificadores pseudonimizados para limite de pedidos.</td>
+            <td>Durante o acesso ao site e às APIs.</td>
+          </tr>
+          <tr>
+            <td><strong>Dados de reprodução em terceiros</strong></td>
+            <td>Endereço IP, aparelho e informações técnicas enviadas diretamente ao servidor de vídeo, CDN ou embed escolhido.</td>
+            <td>Quando você inicia um vídeo ou abre um player de terceiros.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><strong>Não solicitamos</strong><p>O XcreenFlix não pede a sua senha do Google, dados de cartão, documentos, contatos, mensagens, localização precisa, câmera ou microfone para funcionar.</p></div>
+  </section>
+
+  <section id="finalidades">
+    <h2>3. Finalidades e bases legais</h2>
+    <p>Usamos os dados para as finalidades abaixo, conforme a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e, quando aplicável, o Regulamento Geral sobre a Proteção de Dados (RGPD/GDPR):</p>
+    <div class="grid">
+      <div class="mini"><strong>Prestar o serviço</strong><span>Exibir catálogo, abrir detalhes, reproduzir conteúdos e manter o site funcionando.</span></div>
+      <div class="mini"><strong>Autenticar e sincronizar</strong><span>Entrar com Google e sincronizar favoritos e perfil entre aparelhos.</span></div>
+      <div class="mini"><strong>Guardar preferências</strong><span>Lembrar tema, qualidade, seções e ponto de reprodução no seu aparelho.</span></div>
+      <div class="mini"><strong>Enviar notificações</strong><span>Informar novidades e episódios, somente se você ativar esse recurso.</span></div>
+      <div class="mini"><strong>Segurança e prevenção de abuso</strong><span>Limitar pedidos, proteger sessões, diagnosticar erros e manter a estabilidade.</span></div>
+      <div class="mini"><strong>Cumprir obrigações legais</strong><span>Responder a autoridades e exercer direitos quando exigido por lei.</span></div>
+    </div>
+    <p style="margin-top:14px">As bases legais podem incluir: execução de contrato ou procedimentos preliminares, consentimento (por exemplo, notificações), cumprimento de obrigação legal, legítimo interesse (segurança e melhoria do serviço) e exercício regular de direitos.</p>
+  </section>
+
+  <section id="cookies">
+    <h2>4. Cookies e armazenamento local</h2>
+    <p>Usamos cookies essenciais e armazenamento local do navegador. Não usamos cookies próprios de publicidade comportamental. Alguns fornecedores, como Google/Firebase, podem usar cookies ou tecnologias semelhantes para autenticação e segurança.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Nome / tipo</th><th>Finalidade</th><th>Duração</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>xf_sess</code></td><td>Cookie essencial de sessão, HttpOnly, para segurança e limite de pedidos.</td><td>Até 30 minutos</td></tr>
+          <tr><td><code>xf_app</code></td><td>Cookie que lembra que o acesso veio pelo aplicativo Android.</td><td>Até 1 ano</td></tr>
+          <tr><td><code>xf:prefs</code>, <code>xf-theme</code>, <code>xf-favcache</code>, <code>xf:cw</code></td><td>Preferências, tema, cache de favoritos e progresso/continuar a ver no aparelho.</td><td>Até você limpar os dados</td></tr>
+          <tr><td><code>xf:play:return</code>, <code>xf:play:current</code>, <code>xf:vol</code></td><td>Retomar a reprodução, guardar o ponto atual e volume.</td><td>Até você limpar os dados</td></tr>
+          <tr><td><code>xf-notif-read-v1</code>, <code>xf-popup-seen</code></td><td>Lembrar notificações lidas e avisos já exibidos.</td><td>Até você limpar os dados</td></tr>
+          <tr><td>Caches do PWA</td><td>Guardar páginas e arquivos para abrir mais rápido ou funcionar offline.</td><td>Até atualização/limpeza do cache</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px">Você pode apagar cookies e armazenamento local nas configurações do navegador ou do aplicativo. Isso pode remover preferências, favoritos em cache e o ponto de reprodução. O bloqueio de cookies essenciais pode impedir o login ou a reprodução.</p>
+  </section>
+
+  <section id="partilha">
+    <h2>5. Partilha com terceiros</h2>
+    <p>Não vendemos dados pessoais. Podemos partilhar dados apenas quando necessário com:</p>
+    <ul>
+      <li><strong>Google Firebase e Google Identity</strong> — autenticação, perfil, favoritos e infraestrutura de base de dados.</li>
+      <li><strong>Vercel</strong> — hospedagem do site e das APIs, com registos técnicos de acesso.</li>
+      <li><strong>TMDB</strong> — imagens, sinopses e metadados do catálogo. O seu IP pode ser visível ao carregar imagens.</li>
+      <li><strong>Servidores de vídeo, CDNs e embeds</strong> — quando você escolhe assistir. Eles recebem dados técnicos necessários para entregar o conteúdo.</li>
+      <li><strong>Serviços de notificações push</strong> — navegador, Google, Apple ou Mozilla, quando você ativa notificações.</li>
+      <li><strong>Autoridades públicas</strong> — quando houver obrigação legal ou ordem válida.</li>
+    </ul>
+    <p>Alguns desses terceiros podem tratar dados fora do Brasil. Veja a secção sobre transferências internacionais.</p>
+  </section>
+
+  <section id="retencao">
+    <h2>6. Por quanto tempo guardamos</h2>
+    <ul>
+      <li><strong>Conta e favoritos:</strong> enquanto a conta existir ou até você pedir a eliminação.</li>
+      <li><strong>Preferências e progresso local:</strong> no seu aparelho, até você limpar os dados ou desinstalar o app.</li>
+      <li><strong>Sessão:</strong> até 30 minutos após o último uso, salvo renovação.</li>
+      <li><strong>Notificações push:</strong> até você desativar as notificações ou remover a subscrição.</li>
+      <li><strong>Registos técnicos e de segurança:</strong> pelo período necessário à segurança, diagnóstico e cumprimento de obrigações legais, conforme os prazos dos fornecedores de infraestrutura.</li>
+    </ul>
+    <p>Quando não houver mais finalidade ou base legal, os dados são eliminados ou anonimizados.</p>
+  </section>
+
+  <section id="seguranca">
+    <h2>7. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizativas razoáveis, incluindo HTTPS, cookies de sessão HttpOnly/Secure, tokens assinados, limites de pedidos e regras de acesso no Firebase. Nenhum sistema é totalmente seguro; por isso, recomendamos que você não reutilize senhas e que mantenha o aparelho e o navegador atualizados.</p>
+    <p>Se você acredita que a sua conta ou os seus dados foram comprometidos, entre em contacto imediatamente pelo e-mail indicado no final desta política.</p>
+  </section>
+
+  <section id="direitos">
+    <h2>8. Os seus direitos</h2>
+    <p>Nos termos da LGPD, você pode solicitar, conforme aplicável:</p>
+    <ul>
+      <li>confirmação de que tratamos os seus dados;</li>
+      <li>acesso aos dados que temos sobre você;</li>
+      <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+      <li>anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+      <li>portabilidade dos dados, quando regulamentada;</li>
+      <li>eliminação dos dados tratados com consentimento;</li>
+      <li>informação sobre entidades com quem partilhamos dados;</li>
+      <li>revogação do consentimento, quando essa for a base legal;</li>
+      <li>oposição a tratamentos baseados em legítimo interesse, nos termos da lei.</li>
+    </ul>
+    <p>Para exercer os seus direitos, envie um pedido para <a href="mailto:jorcelioarmandonhar@gmail.com">jorcelioarmandonhar@gmail.com</a>. Podemos pedir informações adicionais para confirmar a sua identidade e proteger a conta. Responderemos no prazo legal aplicável.</p>
+    <p>Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD): <a href="https://www.gov.br/anpd/" rel="noopener">www.gov.br/anpd</a>.</p>
+  </section>
+
+  <section id="menores">
+    <h2>9. Crianças e adolescentes</h2>
+    <p>O XcreenFlix não se destina a crianças menores de 13 anos. Se você tem menos de 13 anos, use o serviço apenas com autorização e acompanhamento de um responsável legal. Se acreditarmos que recolhemos dados de uma criança sem base legal adequada, poderemos eliminá-los. Responsáveis podem entrar em contacto pelo e-mail de privacidade para solicitar acesso, correção ou eliminação.</p>
+  </section>
+
+  <section id="internacional">
+    <h2>10. Transferências internacionais</h2>
+    <p>O XcreenFlix e os seus fornecedores, como Google/Firebase e Vercel, podem processar dados em países diferentes do Brasil. Quando isso ocorrer, procuramos usar fornecedores com garantias contratuais e medidas de segurança adequadas, incluindo cláusulas contratuais padrão quando aplicáveis.</p>
+  </section>
+
+  <section id="alteracoes">
+    <h2>11. Alterações desta política</h2>
+    <p>Podemos atualizar esta política para refletir mudanças no serviço, na lei ou nos nossos fornecedores. A data no topo indica a versão mais recente. Alterações relevantes podem ser comunicadas no site ou no aplicativo. O uso continuado após a atualização significa que você tomou conhecimento da nova versão.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>12. Contacto</h2>
+    <p>Para dúvidas, pedidos de privacidade ou eliminação de conta, fale connosco:</p>
+    <div class="contact">
+      <a href="mailto:jorcelioarmandonhar@gmail.com">E-mail de privacidade<small>jorcelioarmandonhar@gmail.com</small></a>
+      <a href="https://github.com/Jorcelio22433/xcreenflix-privacy/issues" rel="noopener">GitHub<small>Abra um pedido público, sem incluir dados sensíveis.</small></a>
+      <a href="https://xcreenflix.vercel.app">XcreenFlix<small>xcreenflix.vercel.app</small></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© 2026 XcreenFlix. Todos os direitos reservados.</span>
+  <span><a href="https://xcreenflix.vercel.app">Voltar ao app</a> · <a href="#quem-somos">Topo</a></span>
+</footer>
+</body>
+</html>
